@@ -22,4 +22,4 @@ import  Quiz  from "./Component/Quiz.svelte";
        
       </style>
     <h1>Music Quiz</h1>
-<Quiz />
+    <div><Quiz /></div>

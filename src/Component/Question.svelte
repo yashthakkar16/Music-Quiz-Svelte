@@ -50,6 +50,11 @@
   }
   .answer {
     display: block;
+    
+  }
+  button{
+    background-color: #524763;
+    color: white;
   }
   
 </style>

@@ -38,13 +38,15 @@
 <style>
   button{
       cursor: pointer;
+      background-color: #524763;
   }
   .fade-wrapper{
     position: absolute;
   }
  
   .container {
-    min-height: 500px;
+    min-height: 300px;
+    
   }
 
 
@@ -54,7 +56,10 @@
     
     <h3>My Score : {$score}</h3>
     <h3>Question #{activeQuestion + 1}</h3>
+    <!-- {#if activeQuestion>9}
+    
     <button on:click={resetQuiz}>Start Quiz</button>
+    {/if} -->
    
   <div class="container">
   {#await quiz}
