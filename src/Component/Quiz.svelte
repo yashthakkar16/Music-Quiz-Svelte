@@ -39,13 +39,14 @@
   button{
       cursor: pointer;
       background-color: #524763;
+      color: white;
   }
   .fade-wrapper{
     position: absolute;
   }
  
   .container {
-    min-height: 300px;
+    min-height: 370px;
     
   }
 

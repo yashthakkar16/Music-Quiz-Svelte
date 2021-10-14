@@ -3,6 +3,7 @@
     export let question;
     export let nextQuestion;
     
+    
 
     let isCorrect;
     let isAnswered = false;
@@ -49,15 +50,35 @@
     color: green;
   }
   .answer {
-    display: block;
+    /* display: block; */
+    display: inline;
+    margin-right: 8px;
     
   }
   button{
     background-color: #524763;
     color: white;
+    cursor: pointer;
+    border-radius: 10px;
   }
-  
+  button:hover{
+    background-color: rgb(163, 138, 197);
+    color: black;
+  }
+
+  @media only screen and (max-width: 608px) {
+
+  .answer {
+    display: block;
+    /* display: inline; */
+    margin-right: 8px;
+    
+  }
+}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <h3>{@html question.question}</h3>
 {#if isAnswered}
@@ -73,5 +94,6 @@
 {/each}
 
 {#if isAnswered}
-<button on:click={nextQuestion}>Next Question</button>
+<br>
+<button on:click={nextQuestion}><i class="fas fa-arrow-right"></i></button>
 {/if} 
